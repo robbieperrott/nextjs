@@ -10,9 +10,9 @@ export default function Post({
 }) {
     const thisPost = use(post);
     
-    return <>
-        <h1>{thisPost.title}</h1>
-        <p>{thisPost.body}</p>
-        <Link className="link" href="/posts"><b>&larr; Back</b></Link>
-    </>
+    return <div className="space-y-4">
+        <div className="font-semibold text-xl">{thisPost.title}</div>
+        <div>{thisPost.body}</div>
+        <Link className="font-semibold" href="/posts">&larr; Back</Link>
+    </div>
 }

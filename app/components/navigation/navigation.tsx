@@ -1,9 +1,25 @@
+import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 
 export default function Navigation() {
-    return <div className="font-semibold flex flex-row space-x-4 px-8 py-4 border sticky top-0 bg-white">
-        <Link className="link" href='/'>Home</Link>
-        <Link className="link" href='/posts'>Posts</Link>
-        <Link className="link" href='/user'>User Details</Link>
-    </div>
+    return <div className="py-2 px-4 border-b">
+        <NavigationMenu>
+        <NavigationMenuList>
+            <NavigationMenuItem>
+                <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                    <Link href='/'>Home</Link>
+                </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+                <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                    <Link href='/posts'>Posts</Link>
+                </NavigationMenuLink>         
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+                <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                    <Link href='/user'>User Details</Link>
+                </NavigationMenuLink>               
+            </NavigationMenuItem>
+        </NavigationMenuList>
+    </NavigationMenu></div>
 }
