@@ -26,7 +26,7 @@ function PostCard(params: {post: Post}) {
   const ellipses = post.body.length > maxCharacters;
 
   return <Link href={`/posts/${post.id}`}>
-      <Card className="h-full">
+      <Card className="h-full hover:text-indigo-500 hover:border-indigo-500 hover:bg-indigo-50">
         <CardHeader className="font-semibold">
           {post.title} &rarr;
         </CardHeader>

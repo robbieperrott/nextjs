@@ -9,7 +9,7 @@ export default function AppLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-gray-50">
         <main>
           <Navigation/>
           <Header/>

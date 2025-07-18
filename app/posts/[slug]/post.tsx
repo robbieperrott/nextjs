@@ -13,6 +13,6 @@ export default function Post({
     return <div className="space-y-4">
         <div className="font-semibold text-xl">{thisPost.title}</div>
         <div>{thisPost.body}</div>
-        <Link className="font-semibold" href="/posts">&larr; Back</Link>
+        <Link className="font-semibold hover:text-indigo-500" href="/posts">&larr; Back</Link>
     </div>
 }
