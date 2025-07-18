@@ -9,9 +9,11 @@ export default function AppLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gray-50">
+      <body>
         <main>
-          <Navigation/>
+          <div className="py-2 px-4 border-b bg-white">
+            <Navigation/>
+          </div>
           <Header/>
           <div className="max-w-m pt-0 pb-20 pl-20 pr-20 flex justify-center">{children}</div>
         </main>

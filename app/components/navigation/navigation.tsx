@@ -3,8 +3,7 @@ import Link from "next/link";
 
 export default function Navigation() {
     const itemClassName = `${navigationMenuTriggerStyle()} hover:text-indigo-500 hover:bg-indigo-50`;
-    return <div className="py-2 px-4 border-b bg-white">
-        <NavigationMenu>
+    return <><NavigationMenu>
         <NavigationMenuList>
             <NavigationMenuItem>
                 <NavigationMenuLink asChild className={itemClassName}>
@@ -22,5 +21,5 @@ export default function Navigation() {
                 </NavigationMenuLink>               
             </NavigationMenuItem>
         </NavigationMenuList>
-    </NavigationMenu></div>
+    </NavigationMenu></>
 }
