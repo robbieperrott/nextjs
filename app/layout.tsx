@@ -12,8 +12,8 @@ export default function AppLayout({
       <body>
         <main>
           <Navigation/>
-            <Header/>
-            <div className="content">{children}</div>
+          <Header/>
+          <div className="max-w-m pt-0 pb-20 pl-20 pr-20 flex justify-center">{children}</div>
         </main>
       </body>
     </html>

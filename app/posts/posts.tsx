@@ -2,7 +2,6 @@
 import { use } from 'react'
 import { Post } from './types'
 import Link from 'next/link'
-import styles from './posts.module.css';
  
 export default function Posts({
   posts,
@@ -12,7 +11,7 @@ export default function Posts({
   const allPosts = use(posts)
  
   return (
-    <div className={styles.grid}>
+    <div className="grid grid-cols-4 gap-4">
       {allPosts.map((post) => (
         <Card key={post.id} post={post}/>
       ))}
@@ -26,9 +25,9 @@ function Card(params: {post: Post}) {
   const ellipses = post.body.length > maxCharacters;
 
   return <Link className="link" href={`/posts/${post.id}`}>
-      <div className={styles.card}>
-        <h4 className={styles.h4}>{post.title} &rarr;</h4>
-        <p className={styles.p}>{post.body.substring(0, maxCharacters)}{ellipses ? "..." : ""}</p>
+      <div className="border rounded-md p-8 space-y-4 h-full">
+        <div className="font-bold">{post.title} &rarr;</div>
+        <div>{post.body.substring(0, maxCharacters)}{ellipses ? "..." : ""}</div>
       </div>
     </Link>
 }

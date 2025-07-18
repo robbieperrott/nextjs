@@ -1,18 +1,9 @@
-import styles from './navigation.module.css';
 import Link from "next/link";
 
 export default function Navigation() {
-    return <nav className={styles.nav}>
-        <ul>
-            <li>
-                <Link href='/'>Home</Link>
-            </li>
-            <li>
-                <Link href='/posts'>Posts</Link>
-            </li>
-            <li>
-                <Link href='/user'>User Details</Link>
-            </li>
-        </ul>
-    </nav>
+    return <div className="font-semibold flex flex-row space-x-4 px-8 py-4 border sticky top-0 bg-white">
+        <Link className="link" href='/'>Home</Link>
+        <Link className="link" href='/posts'>Posts</Link>
+        <Link className="link" href='/user'>User Details</Link>
+    </div>
 }
