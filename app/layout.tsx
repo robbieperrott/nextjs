@@ -1,12 +1,18 @@
+'use client'
+import { useEffect } from "react"
 import Header from "./components/header/header"
 import Navigation from "./components/navigation/navigation"
 import "./globals.css"
+import { setUserId } from "./actions"
 
 export default function AppLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  useEffect(() => {
+    setUserId(1);
+  }, [])
   return (
     <html lang="en">
       <body>
