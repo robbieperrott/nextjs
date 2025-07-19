@@ -10,7 +10,7 @@ export default function AppLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-zinc-50">
         <main>
           <div className="py-2 px-4 border-b bg-white flex justify-between">
             <Navigation/>
