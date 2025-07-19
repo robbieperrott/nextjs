@@ -1,5 +1,5 @@
 'use client'
-import { User } from "./types";
+import { User } from "../types";
 import { use } from "react";
 
 export default function UserDetails({

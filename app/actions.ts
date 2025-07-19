@@ -2,11 +2,11 @@
  
 import { cookies } from 'next/headers'
  
-
 export async function getUserId() {
   'use server'
   const cookieStore = await cookies()
-  return cookieStore.get('userId')?.value;
+  const userIdCookie = cookieStore.get('userId');
+  return userIdCookie ? parseInt(userIdCookie.value) : 1;
 }
 
 export async function setUserId(userId: number) {

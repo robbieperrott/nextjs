@@ -1,6 +1,6 @@
 'use client'
 import { use } from "react";
-import { Post as PostType } from "../types";
+import { Post as PostType } from "../../types";
 import Link from "next/link";
 
 export default function Post({

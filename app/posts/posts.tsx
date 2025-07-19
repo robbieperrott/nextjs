@@ -1,8 +1,8 @@
 'use client'
 import { use } from 'react'
-import { Post } from './types'
 import Link from 'next/link'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
+import { Post } from '../types'
  
 export default function Posts({
   posts,

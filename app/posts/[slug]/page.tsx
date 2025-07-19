@@ -1,5 +1,5 @@
 import { sleep } from "@/app/utils";
-import { Post as PostType } from "../types";
+import { Post as PostType } from "../../types";
 import Post from "./post";
 
 async function fetchPost(id: string): Promise<PostType> {
