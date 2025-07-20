@@ -10,7 +10,7 @@ async function fetchUsers(): Promise<User[]> {
 export default function UserToggle() {
     const users = fetchUsers();
     
-    return <div className="pr-4 flex content-center">
+    return <div className="flex content-center">
         <UserDropdownMenu users={users}/>
     </div>
 }
