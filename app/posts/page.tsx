@@ -1,7 +1,6 @@
 import Posts from "./posts";
 import { sleep } from "../utils";
 import { Post } from "../types";
-import NoUserIdFoundAlert from "../components/errorAlerts/noUserIdFoundAlert";
 import { getUserId } from "../actions";
 
 async function fetchPosts(userId: number): Promise<Post[]> {
@@ -17,6 +16,6 @@ export default async function PostsPage() {
         const posts = fetchPosts(userId);
         return <Posts posts={posts} />
     } else {
-        return <NoUserIdFoundAlert/>
+        throw new Error("Cannot display posts because no user ID was found");
     }
 }

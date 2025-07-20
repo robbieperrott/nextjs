@@ -1,5 +1,4 @@
 import { getUserId } from "../actions";
-import NoUserIdFoundAlert from "../components/errorAlerts/noUserIdFoundAlert";
 import { User } from "../types";
 import UserDetails from "./userDetails";
 
@@ -15,6 +14,6 @@ export default async function UserPage() {
         const user = fetchUser(userId);
         return <UserDetails user={user}/>;
     } else {
-        return <NoUserIdFoundAlert/>
+        throw new Error("Cannot display user because no user ID was found");
     }
 }

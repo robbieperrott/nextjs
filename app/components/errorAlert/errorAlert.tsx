@@ -1,9 +1,9 @@
 import { Alert, AlertTitle } from "@/components/ui/alert";
 import { AlertCircleIcon } from "lucide-react";
 
-export default function NoUserIdFoundAlert() {
+export default function ErrorAlert(params: {message: string}) {
     return <Alert className="size-fit" variant="destructive">
         <AlertCircleIcon />
-        <AlertTitle>No user ID found</AlertTitle>
+        <AlertTitle>{params.message}</AlertTitle>
       </Alert>
 }
