@@ -1,4 +1,4 @@
-import { getUserId } from "@/app/actions";
+import { getUserId } from "@/app/cookieFunctions";
 import { User } from "../../types";
 import UserAvatar from "./userAvatar";
 import UserDropdownMenu from "./userDropdownMenu";

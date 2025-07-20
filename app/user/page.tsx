@@ -1,4 +1,4 @@
-import { getUserId } from "../actions";
+import { getUserId } from "../cookieFunctions";
 import { User } from "../types";
 import UserDetails from "./userDetails";
 

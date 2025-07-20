@@ -1,5 +1,5 @@
 'use client'
-import { getUserId, setUserId } from "@/app/actions";
+import { getUserId, setUserId } from "@/app/cookieFunctions";
 import { User } from "../../types";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { use } from "react";

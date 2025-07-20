@@ -1,7 +1,7 @@
 import Posts from "./posts";
 import { sleep } from "../utils";
 import { Post } from "../types";
-import { getUserId } from "../actions";
+import { getUserId } from "../cookieFunctions";
 
 async function fetchPosts(userId: number): Promise<Post[]> {
     const response = await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`);
