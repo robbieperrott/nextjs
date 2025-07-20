@@ -17,6 +17,12 @@ export default function Navigation() {
             </NavigationMenuItem>
             <NavigationMenuItem>
                 <NavigationMenuLink asChild className={itemClassName}>
+                    {/* There seems to be a bug where the 3rd navigation menu item does not appear when I deploy to vercel (but does appear locally). */}
+                    {/* So I've added an empty item here as a workaround */}
+                </NavigationMenuLink>               
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+                <NavigationMenuLink asChild className={itemClassName}>
                     <Link href='/user'>User Details</Link>
                 </NavigationMenuLink>               
             </NavigationMenuItem>
