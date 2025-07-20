@@ -23,6 +23,7 @@ The application is publicly available at [nextjs-eta-three-35.vercel.app](https:
 - Rather than switching between users in a toggle it would probably make more sense to log in / log out to change users.
 - If you switch the active user while on the User Details or Posts page, the page waits for all the requests to complete, and there is no loading state to indicate that the new user data is being fetched. This makes the page appear to be unresponsive for a short time.
 - You shouldn't be able to switch users while on the Post page, because the new user will then be viewing another user's post.
+- There was a strange bug I couldn't figure out, where the "User details" nav item was not showing up in my nav bar in deployment, even though it was showing up locally. I worked around this by adding an empty nav item in between "Posts" and "User Details" which solved the issue, although it would be good to figure out why this was happening in the first place.
 
 ## Running locally
 
