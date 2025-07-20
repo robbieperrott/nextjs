@@ -33,4 +33,5 @@ I've used the following next.js concepts:
 - <a href="https://nextjs.org/docs/app/getting-started/layouts-and-pages">File-system based routing</a> (for layouts, pages, errors, and loading UIs)
 - <a href="https://nextjs.org/docs/app/getting-started/server-and-client-components" target="_blank">Server and client components</a>
 - <a href="https://nextjs.org/docs/app/getting-started/updating-data#what-are-server-functions" target="_blank">Server functions</a> to update data (in this case, to get and set the user ID cookie in cookieFunctions.ts)
-- <a href="https://nextjs.org/docs/app/getting-started/error-handling#nested-error-boundaries">Error boundaries</a>
+- <a href="https://nextjs.org/docs/app/getting-started/error-handling#nested-error-boundaries">Error boundaries</a> to catch and display appropriate error UIs.
+- <a href="https://nextjs.org/learn/dashboard-app/streaming" target="_blank">Streaming</a> on the User Details page. The requests for the number of posts, comments, and todos take different amounts of time to complete. As soon as there is a result of a request, it is rendered, rather than waiting for all the requests to complete.
