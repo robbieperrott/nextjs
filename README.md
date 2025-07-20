@@ -21,7 +21,8 @@ The application is publicly available at [nextjs-eta-three-35.vercel.app](https:
 
 ## Areas for improvement
 - Rather than switching between users in a toggle it would probably make more sense to log in / log out to change users.
-- If you switch the active user while on the User Details page, the page waits for all the requests (the user request, and the requests for number of posts, comments, and photos) to complete, and there is no loading state to indicate that the new user data is being fetched. This makes the page appear to be unresponsive for a short time.
+- If you switch the active user while on the User Details or Posts page, the page waits for all the requests to complete, and there is no loading state to indicate that the new user data is being fetched. This makes the page appear to be unresponsive for a short time.
+- You shouldn't be able to switch users while on the Post page, because the new user will then be viewing another user's post.
 
 ## Running locally
 
