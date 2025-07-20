@@ -1,7 +1,5 @@
 import { getUserId } from "../cookieFunctions";
-import { User } from "../types";
 import UserDetails from "./userDetails";
-
 
 export default async function UserPage() {
     const userId = await getUserId();

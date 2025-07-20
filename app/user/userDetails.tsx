@@ -1,5 +1,4 @@
 import { User } from "../types";
-import { sleep } from "../utils";
 import NumPosts from "./numPosts";
 import { getUserId } from "../cookieFunctions";
 import NumComments from "./numComments";
